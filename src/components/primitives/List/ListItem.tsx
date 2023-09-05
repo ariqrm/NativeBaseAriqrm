@@ -4,7 +4,7 @@ import type { IListItemProps } from './types';
 import { usePropsResolution } from '../../../hooks/useThemeProps';
 import { mergeRefs } from '../../../utils';
 import { Pressable } from '../Pressable';
-// import { useHover } from '@react-native-aria/interactions';
+// import { useHover } from 'react-native-aria';
 import { extractInObject } from '../../../theme/tools';
 import { composeEventHandlers } from '../../../utils';
 import {

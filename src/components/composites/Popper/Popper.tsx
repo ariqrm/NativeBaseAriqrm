@@ -1,5 +1,5 @@
 import React from 'react';
-import { useOverlayPosition } from '@react-native-aria/overlays';
+import { useOverlayPosition } from 'react-native-aria';
 import { StyleSheet, View, ViewStyle } from 'react-native';
 import type {
   IPopperProps,

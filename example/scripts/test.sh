@@ -20,7 +20,7 @@ reset=`tput sgr0`
 # script to be added
 #unset PREFIX
 # . ~/.nvm/nvm.sh
-# nvm install v14.19.0
+# nvm install v18.16.0
 # nvm use
 
 if [ $# -eq 0 ]
@@ -29,11 +29,11 @@ if [ $# -eq 0 ]
     jest --config jest-android.config.js --silent
     NODEVERSION=$(node -v)
     echo "you are using node version $NODEVERSION"
-    if [ $NODEVERSION != "v14.19.0" ]
+    if [ $NODEVERSION != "v18.16.0" ]
       then
-        echo "${red}Error! Node module v14.19.0 is not present or nvm is not installed
-        ${green}If you have node v14.19.0 run 'nvm use'
-        Else run 'nvm install v14.19.0'${reset} "
+        echo "${red}Error! Node module v18.16.0 is not present or nvm is not installed
+        ${green}If you have node v18.16.0 run 'nvm use'
+        Else run 'nvm install v18.16.0'${reset} "
       else
         jest --silent
     fi 
@@ -44,12 +44,12 @@ if [ $# -eq 0 ]
     jest --config jest-android.config.js -u --silent
       NODEVERSION=$(node -v)
     echo "you are using node version $NODEVERSION"
-    if [ $NODEVERSION != "v14.19.0" ]
+    if [ $NODEVERSION != "v18.16.0" ]
       then
         jest -u --silent
-        echo "${red}Error! Node module v14.19.0 is not present or nvm is not installed
-        ${green}If you have node v14.19.0 run 'nvm use'
-        Else run 'nvm install v14.19.0'${reset} "
+        echo "${red}Error! Node module v18.16.0 is not present or nvm is not installed
+        ${green}If you have node v18.16.0 run 'nvm use'
+        Else run 'nvm install v18.16.0'${reset} "
       else
         jest -u --silent
     fi 

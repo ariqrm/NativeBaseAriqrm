@@ -289,8 +289,8 @@ export const platformSpecificSpaceUnits = (theme: ITheme) => {
   const newTheme = { ...theme };
   const isWeb = Platform.OS === 'web';
   scales.forEach((key) => {
-    const scale = get(theme, key, {});
-    const newScale = { ...scale };
+    const scale: any = get(theme, key, {});
+    const newScale: any = { ...scale };
     for (const scaleKey in scale) {
       const val = scale[scaleKey];
       if (typeof val !== 'object') {

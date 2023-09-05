@@ -11,7 +11,7 @@ import {
   useIsPressed,
 } from '../../primitives/Pressable/Pressable';
 import { composeEventHandlers } from '../../../utils';
-import { useFocusRing } from '@react-native-aria/focus';
+import { useFocusRing } from 'react-native-aria';
 
 const AlertDialogCloseButton = (props: IButtonProps, ref?: any) => {
   const { hoverProps, isHovered } = useHover();

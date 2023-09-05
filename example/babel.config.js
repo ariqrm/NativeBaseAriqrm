@@ -6,6 +6,8 @@ module.exports = function (api) {
   return {
     presets: [['babel-preset-expo', { jsxRuntime: 'classic' }]],
     plugins: [
+      '@babel/plugin-transform-private-methods',
+      '@babel/plugin-proposal-class-properties',
       [
         'module-resolver',
         {

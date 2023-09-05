@@ -3,7 +3,7 @@ import { TextInput, Platform } from 'react-native';
 import type { IInputProps } from './types';
 import { useToken } from '../../../hooks';
 import { usePropsResolution } from '../../../hooks/useThemeProps';
-import { useHover } from '@react-native-aria/interactions';
+import { useHover } from 'react-native-aria';
 import { mergeRefs } from '../../../utils';
 import { makeStyledComponent } from '../../../utils/styled';
 import { useResolvedFontFamily } from '../../../hooks/useResolvedFontFamily';

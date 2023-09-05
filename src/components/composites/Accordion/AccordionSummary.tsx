@@ -8,7 +8,7 @@ import type {
 import { AccordionItemContext } from './Context';
 import { useThemeProps } from '../../../hooks';
 import { mergeRefs } from '../../../utils';
-import { useHover } from '@react-native-aria/interactions';
+import { useHover } from 'react-native-aria';
 import { useHasResponsiveProps } from '../../../hooks/useHasResponsiveProps';
 
 const AccordionSummary = (

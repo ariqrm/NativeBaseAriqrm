@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { OverlayContainer } from '@react-native-aria/overlays';
+import { OverlayContainer } from 'react-native-aria';
 import React from 'react';
 import type { ViewStyle } from 'react-native';
 import { Modal, Platform } from 'react-native';

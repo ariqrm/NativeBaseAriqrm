@@ -136,14 +136,23 @@ export function usePropsResolutionTest(
 
   const { theme } = useNativeBase();
   const colorModeProps = useColorMode();
+  const defaultProps: any = {},
+    variants: any = {},
+    sizes: any = {},
+    baseStyle: any = {};
 
-  const componentTheme = get(theme, `components.${component}`, {});
+  const componentTheme = get(theme, `components.${component}`, {
+    defaultProps,
+    baseStyle,
+    variants,
+    sizes,
+  });
 
   // STEP 1: combine default props and incoming props
 
   const incomingWithDefaultProps = merge(
     {},
-    componentTheme.defaultProps || {},
+    componentTheme?.defaultProps || {},
     cleanIncomingProps
   );
   // STEP 2: flatten them

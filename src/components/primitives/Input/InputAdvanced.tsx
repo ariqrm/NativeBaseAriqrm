@@ -4,7 +4,7 @@ import Box from '../Box';
 import type { IInputProps } from './types';
 import { usePropsResolution } from '../../../hooks/useThemeProps';
 import { extractInObject, stylingProps } from '../../../theme/tools/utils';
-import { useHover } from '@react-native-aria/interactions';
+import { useHover } from 'react-native-aria';
 import { mergeRefs } from '../../../utils';
 import { useHasResponsiveProps } from '../../../hooks/useHasResponsiveProps';
 

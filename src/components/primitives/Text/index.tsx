@@ -1,7 +1,7 @@
 import React, { memo, forwardRef, useRef } from 'react';
 import { usePropsResolution } from '../../../hooks/useThemeProps';
 import type { ITextProps } from './types';
-import { useHover } from '@react-native-aria/interactions';
+import { useHover } from 'react-native-aria';
 import { mergeRefs } from '../../../utils/mergeRefs';
 import { makeStyledComponent } from '../../../utils/styled';
 import { useResolvedFontFamily } from '../../../hooks/useResolvedFontFamily';

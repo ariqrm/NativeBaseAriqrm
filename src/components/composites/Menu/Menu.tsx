@@ -8,7 +8,7 @@ import { useControllableState } from '../../../hooks';
 import { useMenuTrigger, useMenu, useMenuTypeahead } from './useMenu';
 import Backdrop from '../Backdrop';
 import { PresenceTransition } from '../Transitions';
-import { FocusScope } from '@react-native-aria/focus';
+import { FocusScope } from 'react-native-aria';
 import { MenuContext } from './MenuContext';
 import { Overlay } from '../../primitives/Overlay';
 import { useHasResponsiveProps } from '../../../hooks/useHasResponsiveProps';

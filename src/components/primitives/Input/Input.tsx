@@ -4,7 +4,7 @@ import { TextInput } from 'react-native';
 import { useToken } from '../../../hooks';
 import { useFormControl } from '../../composites/FormControl';
 import { useHasResponsiveProps } from '../../../hooks/useHasResponsiveProps';
-import { useHover } from '@react-native-aria/interactions';
+import { useHover } from 'react-native-aria';
 import { extractInObject, stylingProps } from '../../../theme/tools/utils';
 import { usePropsResolution } from '../../../hooks/useThemeProps';
 import { mergeRefs, resolveStackStyleInput } from '../../../utils';

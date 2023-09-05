@@ -287,10 +287,10 @@ export const platformSpecificSpaceUnits = (theme: IV33xTheme) => {
   const newTheme = { ...theme };
   const isWeb = Platform.OS === 'web';
   scales.forEach((key) => {
-    const scale = get(theme, key, {});
-    const newScale = { ...scale };
+    const scale: any = get(theme, key, {});
+    const newScale: any = { ...scale };
     for (const scaleKey in scale) {
-      const val = scale[scaleKey];
+      const val: any = scale[scaleKey];
       if (typeof val !== 'object') {
         const isAbsolute = typeof val === 'number';
         const isPx = !isAbsolute && val.endsWith('px');

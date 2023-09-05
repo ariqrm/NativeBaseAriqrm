@@ -52,11 +52,7 @@ function Slider({ isDisabled, isReadOnly, ...props }: ISliderProps, ref?: any) {
     isReadOnly,
   });
 
-  const { trackProps } = useSlider(
-    (props as unknown) as any,
-    state,
-    trackLayout
-  );
+  const { trackProps } = useSlider(props as unknown as any, state, trackLayout);
 
   const contextValue = React.useMemo(() => {
     return {

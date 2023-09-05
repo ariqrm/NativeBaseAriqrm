@@ -1,4 +1,4 @@
-import { OverlayContainer } from '@react-native-aria/overlays';
+import { OverlayContainer } from 'react-native-aria';
 import React from 'react';
 import Backdrop from '../Backdrop';
 import Box from '../../primitives/Box';

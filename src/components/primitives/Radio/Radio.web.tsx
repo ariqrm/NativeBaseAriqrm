@@ -8,11 +8,11 @@ import { usePropsResolution } from '../../../hooks/useThemeProps';
 import { wrapStringChild } from '../../../utils/wrapStringChild';
 import type { IRadioProps } from './types';
 import { mergeRefs } from './../../../utils';
-import { useHover } from '@react-native-aria/interactions';
-import { useRadio } from '@react-native-aria/radio';
+import { useHover } from 'react-native-aria';
+import { useRadio } from 'react-native-aria';
 import { VisuallyHidden } from '@react-aria/visually-hidden';
 import { RadioContext } from './RadioGroup';
-import { useFocusRing } from '@react-native-aria/focus';
+import { useFocusRing } from 'react-native-aria';
 import { CircleIcon } from '../Icon/Icons';
 import { useHasResponsiveProps } from '../../../hooks/useHasResponsiveProps';
 import { combineContextAndProps, isEmptyObj } from '../../../utils';
@@ -87,7 +87,7 @@ const RadioComponent = memo(
             <Box {..._interactionBox} />
             {/* Radio */}
             <Center {...resolvedProps}>
-              {icon && sizedIcon && isChecked ? (
+              {icon && typeof sizedIcon === 'function' && isChecked ? (
                 sizedIcon()
               ) : (
                 <CircleIcon {..._icon} opacity={isChecked ? 1 : 0} />

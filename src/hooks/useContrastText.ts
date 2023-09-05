@@ -65,7 +65,7 @@ function getContrastThemeColor(bgThemeColorVariant: string, bgShade: string) {
   return 'darkText';
 }
 function getAccessibleContrastColor(
-  contrastThreshold: number,
+  contrastThreshold: number | string,
   trueDarkText: string,
   trueLightText: string,
   trueBg: string,
@@ -83,7 +83,7 @@ function getAccessibleContrastColor(
   const lightTextConstrast = getContrastRatio(trueBg, trueLightText);
 
   if (
-    darkTextConstrast >= contrastThreshold ||
+    darkTextConstrast >= Number(contrastThreshold) ||
     darkTextConstrast > lightTextConstrast
   ) {
     trueContrastColor = trueDarkText;

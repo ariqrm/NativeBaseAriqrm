@@ -9,7 +9,7 @@ import type { InterfaceBoxProps } from '../Box';
 import type { ColorSchemeType } from '../../../components/types';
 
 export interface InterfaceSwitchProps
-  extends Omit<SwitchProps, 'tintColor'>,
+  extends Omit<SwitchProps, string | 'tintColor'>,
     InterfaceBoxProps<ISwitchProps> {
   /**
    * The size (width and height) of the switch.
@@ -68,6 +68,9 @@ export interface InterfaceSwitchProps
    * Props when Switch is hovered. Accepts all the Switch props.
    */
   _hover?: Omit<Partial<ISwitchProps>, '_hover'>;
+  disabled?: boolean;
+  value?: any;
+  onValueChange?: (value:any) => void;
 }
 
 export type ISwitchProps = InterfaceSwitchProps & CustomProps<'Switch'>;

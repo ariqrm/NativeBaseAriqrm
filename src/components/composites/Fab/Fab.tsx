@@ -2,7 +2,7 @@ import React, { memo, forwardRef } from 'react';
 import { Button } from '../../primitives/Button';
 import type { IFabProps } from './types';
 import { usePropsResolution } from '../../../hooks/useThemeProps';
-import { OverlayContainer } from '@react-native-aria/overlays';
+import { OverlayContainer } from 'react-native-aria';
 import { useHasResponsiveProps } from '../../../hooks/useHasResponsiveProps';
 import { extractInObject } from '../../../theme/tools/utils';
 

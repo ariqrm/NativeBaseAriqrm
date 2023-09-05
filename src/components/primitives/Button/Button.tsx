@@ -11,7 +11,7 @@ import {
   useFocus,
   useIsPressed,
 } from '../../primitives/Pressable/Pressable';
-import { useFocusRing } from '@react-native-aria/focus';
+import { useFocusRing } from 'react-native-aria';
 import { useHasResponsiveProps } from '../../../hooks/useHasResponsiveProps';
 
 const Button = (

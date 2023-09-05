@@ -7,7 +7,7 @@ import { useToken } from '../../../hooks';
 import { makeStyledComponent } from '../../../utils/styled';
 import type { ISwitchProps } from './types';
 import { mergeRefs } from '../../../utils';
-import { useHover } from '@react-native-aria/interactions';
+import { useHover } from 'react-native-aria';
 import { useHasResponsiveProps } from '../../../hooks/useHasResponsiveProps';
 import { useFormControlContext } from '../../composites/FormControl';
 import { combineContextAndProps } from '../../../utils';
@@ -17,7 +17,6 @@ const StyledNBSwitch = makeStyledComponent(RNSwitch);
 // TODO: Needs proper refactor
 const Switch = (
   {
-    disabled,
     isDisabled,
     isInvalid,
     isChecked,
@@ -25,6 +24,7 @@ const Switch = (
     accessibilityLabel,
     accessibilityHint,
     onToggle,
+    disabled,
     value,
     onValueChange,
     isHovered: isHoveredProp,

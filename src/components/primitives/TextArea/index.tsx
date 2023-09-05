@@ -3,7 +3,7 @@ import { Input } from '../Input';
 import type { InterfaceInputProps } from '../Input/types';
 import { usePropsResolution } from '../../../hooks/useThemeProps';
 import { useHasResponsiveProps } from '../../../hooks/useHasResponsiveProps';
-import { useHover } from '@react-native-aria/interactions';
+import { useHover } from 'react-native-aria';
 import { mergeRefs } from '../../../utils';
 import type { PlatformProps } from '../../../components/types';
 export interface ITextAreaProps

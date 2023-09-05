@@ -1,4 +1,4 @@
-import { OverlayContainer } from '@react-native-aria/overlays';
+import { OverlayContainer } from 'react-native-aria';
 import React from 'react';
 import { useControllableState, useKeyboardDismissable } from '../../../hooks';
 import { Popper } from '../Popper';
@@ -8,7 +8,7 @@ import { Platform, StyleSheet } from 'react-native';
 import { usePropsResolution } from '../../../hooks';
 import Box from '../../primitives/Box';
 import type { ITooltipProps } from './types';
-import { useId } from '@react-native-aria/utils';
+import { useId } from 'react-native-aria';
 import { useHasResponsiveProps } from '../../../hooks/useHasResponsiveProps';
 import uniqueId from 'lodash.uniqueid';
 import { ResponsiveQueryContext } from '../../../utils/useResponsiveQuery/ResponsiveQueryProvider';

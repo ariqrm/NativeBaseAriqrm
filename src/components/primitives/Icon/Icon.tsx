@@ -20,7 +20,7 @@ const Icon = (props: IIconProps, ref?: any) => {
     isJSX
       ? (resolvedProps) =>
           React.cloneElement(as, {
-            ...resolvedProps,
+            ...(resolvedProps || {}),
             //@ts-ignore
             ...as.props,
           })

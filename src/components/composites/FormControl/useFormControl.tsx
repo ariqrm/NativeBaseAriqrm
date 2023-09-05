@@ -1,5 +1,5 @@
 import React from 'react';
-import { useId } from '@react-native-aria/utils';
+import { useId } from 'react-native-aria';
 import omit from 'lodash.omit';
 import type { IFormControlProps } from './types';
 import { ariaAttr } from '../../../utils';

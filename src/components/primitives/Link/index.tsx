@@ -7,7 +7,7 @@ import { usePropsResolution } from '../../../hooks';
 import { useLink } from './useLink';
 import { mergeRefs } from '../../../utils';
 import { Pressable } from '../Pressable';
-import { useHover } from '@react-native-aria/interactions';
+import { useHover } from 'react-native-aria';
 import { useHasResponsiveProps } from '../../../hooks/useHasResponsiveProps';
 
 const Link = ({ isHovered: isHoveredProp, ...props }: ILinkProps, ref: any) => {

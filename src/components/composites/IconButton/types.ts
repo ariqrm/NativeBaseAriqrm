@@ -7,6 +7,7 @@ import type { ThemeComponentSizeType } from '../../../components/types/utils';
 export interface InterfaceIconButtonProps
   extends Omit<
       InterfacePressableProps<InterfaceIconButtonProps>,
+      string
       | 'children'
       | 'color'
       | '_light'
@@ -73,6 +74,10 @@ export interface InterfaceIconButtonProps
    *
    */
   _focus?: Omit<Partial<IIconButtonProps>, '_focus'>;
+  isHovered: any;
+  isPressed: any;
+  isFocused: any;
+  isFocusVisible: any;
 }
 
 export type IIconButtonProps = InterfaceIconButtonProps & CustomProps<'Icon'>;

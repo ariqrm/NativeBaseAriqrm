@@ -3,7 +3,7 @@ import { Stack } from '../Stack';
 import { useFormControlContext } from '../../composites/FormControl';
 import type { IRadioContext, IRadioGroupProps } from './types';
 import { useRadioGroupState } from '@react-stately/radio';
-import { useRadioGroup } from '@react-native-aria/radio';
+import { useRadioGroup } from 'react-native-aria';
 import { useHasResponsiveProps } from '../../../hooks/useHasResponsiveProps';
 import { usePropsResolution } from '../../../hooks/useThemeProps';
 

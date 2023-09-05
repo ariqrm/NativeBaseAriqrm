@@ -1,5 +1,5 @@
 import React from 'react';
-import { useButton } from '@react-native-aria/button';
+import { useButton } from 'react-native-aria';
 import { ComboBoxState, useComboBoxState } from '@react-stately/combobox';
 import { useComboBox } from '@react-native-aria/combobox';
 import { useListBox, useOption } from '@react-native-aria/listbox';

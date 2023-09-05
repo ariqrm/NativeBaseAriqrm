@@ -5,7 +5,7 @@ import { TabsContext } from './Context';
 import type { ITabProps, ITabsContextProps } from './types';
 import { omitUndefined } from '../../../theme/tools/utils';
 import { useTab } from '@react-native-aria/tabs';
-import { useHover } from '@react-native-aria/interactions';
+import { useHover } from 'react-native-aria';
 import { mergeRefs } from '../../../utils';
 import merge from 'lodash.merge';
 import { themeTools } from '../../../theme';

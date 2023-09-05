@@ -1,6 +1,6 @@
 import React from 'react';
-import { useFocusManager } from '@react-native-aria/focus';
-import { useId } from '@react-native-aria/utils';
+import { useFocusManager } from 'react-native-aria';
+import { useId } from 'react-native-aria';
 import { AccessibilityRole, Platform } from 'react-native';
 import { ResponsiveQueryContext } from '../../../utils/useResponsiveQuery/ResponsiveQueryProvider';
 import uniqueId from 'lodash.uniqueid';

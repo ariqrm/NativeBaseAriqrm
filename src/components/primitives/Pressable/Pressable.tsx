@@ -5,7 +5,7 @@ import type { IPressableProps } from './types';
 import { useHasResponsiveProps } from '../../../hooks/useHasResponsiveProps';
 import { makeStyledComponent } from '../../../utils/styled';
 import { usePropsResolution } from '../../../hooks/useThemeProps';
-import { useFocusRing } from '@react-native-aria/focus';
+import { useFocusRing } from 'react-native-aria';
 
 export const useHover = () => {
   const [isHovered, setHovered] = React.useState(false);

@@ -1,6 +1,6 @@
 import React, { createContext, memo, forwardRef, useMemo } from 'react';
 import { useCheckboxGroupState } from '@react-stately/checkbox';
-import { useCheckboxGroup } from '@react-native-aria/checkbox';
+import { useCheckboxGroup } from 'react-native-aria';
 import { useFormControlContext } from '../../composites/FormControl';
 import type { ICheckboxGroupProps, ICheckboxContext } from './types';
 import Box from '../Box';

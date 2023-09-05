@@ -8,7 +8,7 @@ import type { ISliderThumbProps } from './types';
 import Box from '../Box';
 import { SliderContext } from './Context';
 import { useHasResponsiveProps } from '../../../hooks/useHasResponsiveProps';
-import { useHover } from '@react-native-aria/interactions';
+import { useHover } from 'react-native-aria';
 import { mergeRefs } from '../../../utils';
 import { extractInObject, stylingProps } from '../../../theme/tools/utils';
 import { Stack } from '../Stack';
