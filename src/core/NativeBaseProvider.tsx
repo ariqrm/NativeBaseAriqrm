@@ -91,10 +91,10 @@ const NativeBaseProvider = (props: NativeBaseProviderProps) => {
             colorModeManager={colorModeManager}
             options={theme.config}
           >
-            <OverlayProvider isSSR>
+            <OverlayProvider isSSR={isSSR}>
               <ToastProvider>
                 <InitializeToastRef />
-                <SSRProvider>{children}</SSRProvider>
+                {isSSR?<SSRProvider>{children}</SSRProvider>:children}
               </ToastProvider>
             </OverlayProvider>
           </HybridProvider>
