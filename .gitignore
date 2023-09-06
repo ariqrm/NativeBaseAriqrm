@@ -60,3 +60,5 @@ node_modules
 # personal 
 .env
 .npmrc
+*package-lock.json
+*yarn.lock
