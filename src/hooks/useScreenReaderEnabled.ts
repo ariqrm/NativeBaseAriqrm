@@ -28,7 +28,9 @@ export function useScreenReaderEnabled() {
     setInitialValue();
     return () => {
       mountedRef.current = false;
-      AccessibilityInfo.removeEventListener('screenReaderChanged', handler);
+      if (handler?.remove) {
+        handler?.remove()
+      }
     };
   });
 

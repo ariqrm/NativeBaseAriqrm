@@ -45,7 +45,9 @@ const Image = memo(
 
     const onImageLoadError = useCallback(
       (event: any) => {
-        props.onError && props.onError(event);
+        if (typeof props?.onError === 'function') {
+          props.onError(event);
+        }
         console.warn(event.nativeEvent.error);
         if (
           !ignoreFallback &&

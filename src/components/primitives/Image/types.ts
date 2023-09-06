@@ -7,6 +7,7 @@ export interface InterfaceImageProps
   extends PlatformProps<IImageProps>,
     Omit<
       ImageProps,
+      string
       | 'borderRadius'
       | 'borderTopLeftRadius'
       | 'borderTopRightRadius'
@@ -45,6 +46,8 @@ export interface InterfaceImageProps
    * specify a source for image.
    */
   src?: string;
+  testID?: string;
+  onError?: (event: any) => void;
 }
 
 export type IImageProps = InterfaceImageProps & CustomProps<'Image'>;
